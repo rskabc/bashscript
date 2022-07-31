@@ -1,6 +1,6 @@
 #!/bin/bash
 apt update
-apt install snmp snmpd -y
+apt install -y snmp snmpd 
 mv /etc/snmp/snmpd.conf /etc/snmp/snmpd.bak
 echo "rocommunity public" > /etc/snmp/snmpd.conf
 
