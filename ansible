@@ -1,0 +1,6 @@
+apt  update
+apt install -y python3 python3-pip
+pip3 install ansible
+ansible --version
+echo "[Node1]\n2.31.51.3 ansible_ssh_user=rskabc\n[Node2]\n172.31.51.5 ansible_ssh_user=rskabc" | sudo tee -a /etc/hosts
+ssh-keygen -t rsa
