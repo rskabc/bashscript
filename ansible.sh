@@ -1,6 +1,6 @@
 #!/bin/bash
 apt  update
-apt install -y python3 python3-pip
+apt install -y python3 python3-pip sshpass
 pip3 install ansible
 ansible --version
 mkdir /etc/ansible
